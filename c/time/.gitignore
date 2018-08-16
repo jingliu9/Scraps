@@ -3,3 +3,4 @@ ftime
 gettimeofday
 cached_time
 clock_gettime
+rdtsc

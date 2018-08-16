@@ -8,6 +8,7 @@ all:
 	$(CC) gettimeofday.c -o gettimeofday $(C_OPTS) $(LIBS)
 	$(CC) clock_gettime.c -o clock_gettime $(C_OPTS) $(LIBS)
 	$(CC) cached_time.c -o cached_time $(C_OPTS) $(LIBS)
+	$(CC) rdtsc.c -o rdtsc $(C_OPTS) $(LIBS)
 
 run:
 	./time
