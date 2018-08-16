@@ -3,11 +3,11 @@ C_OPTS=-O2
 LIBS=-lrt -lpthread
 
 all:
-	$(CC) $(C_OPTS) $(LIBS) time.c -o time
-	$(CC) $(C_OPTS) $(LIBS) ftime.c -o ftime
-	$(CC) $(C_OPTS) $(LIBS) gettimeofday.c -o gettimeofday
-	$(CC) $(C_OPTS) $(LIBS) clock_gettime.c -o clock_gettime
-	$(CC) $(C_OPTS) $(LIBS) cached_time.c -o cached_time
+	$(CC) time.c -o time $(C_OPTS) $(LIBS) 
+	$(CC) ftime.c -o ftime $(C_OPTS) $(LIBS)
+	$(CC) gettimeofday.c -o gettimeofday $(C_OPTS) $(LIBS)
+	$(CC) clock_gettime.c -o clock_gettime $(C_OPTS) $(LIBS)
+	$(CC) cached_time.c -o cached_time $(C_OPTS) $(LIBS)
 
 run:
 	./time
